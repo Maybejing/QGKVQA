@@ -1,0 +1,27 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--data_name","fvqa_sp1",
+                "--model_name","ht",
+                "--cfg","ht_fvqa",
+                "--n_hop","1",
+                "--num_workers","0",
+                "--lr","0.00001",
+                "--exp_name","ht_fvqa_sp1",
+                "--max_epoch","1",
+                "--abl_ans_fc"
+            ]
+        }
+    ]
+}
